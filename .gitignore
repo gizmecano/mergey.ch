@@ -1,2 +1,5 @@
 # Operating system
 [Dd]esktop.ini
+
+# Integrated development environment
+*.*-workspace
