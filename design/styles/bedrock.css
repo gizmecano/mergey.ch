@@ -5,8 +5,8 @@
 :root {
   /* Embedded fonts with minimal stack */
   --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Fraunces', serif;
 }
-
 
 /* ==========================================================================
    Main grid layout
@@ -62,6 +62,8 @@ body > header {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: none;
   padding: 2.5em 0;
+  font-family: var(--font-serif);
+  font-style: normal;
 }
 
 body > header div:first-child {
@@ -87,6 +89,8 @@ body > header div:last-child h1 {
   line-height: 1em;
   margin: 1rem 0;
   font-size: 2.5em;
+  font-variation-settings: "opsz" 16;
+  font-weight: 800;
 }
 
 body > header div:last-child h1 + p {
@@ -94,6 +98,8 @@ body > header div:last-child h1 + p {
   margin: .5rem 0;
   text-align: right;
   font-size: 1.25em;
+  font-variation-settings: "opsz" 48;
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {
@@ -119,6 +125,13 @@ main {
 
 main article header {
   margin: 0 0 2.5em 0;
+}
+
+main article header h2,
+main article h3 {
+  font-family: var(--font-serif);
+  font-variation-settings: "opsz" 16;
+  font-weight: 600;
 }
 
 main article header h2 {
@@ -157,4 +170,7 @@ body > footer > p {
   line-height: 1.375;
   text-align: right;
   margin: 0 2.5em;
+  font-family: var(--font-serif);
+  font-variation-settings: "opsz" 18;
+  font-weight: 400;
 }
