@@ -1,0 +1,181 @@
+/* ==========================================================================
+   Document roots
+   ========================================================================== */
+
+:root {
+  /* Embedded fonts with minimal stack */
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Fraunces', serif;
+  /* Color palette using RGB values */
+  --tint-blue-dark: 31, 48, 94;
+  --tint-gold-pale: 251, 243, 211;
+}
+
+/* ==========================================================================
+   Main grid layout
+   ========================================================================== */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(var(--tint-blue-dark));
+  color: rgb(var(--tint-gold-pale));
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  font-family: var(--font-sans);
+  font-feature-settings: 'calt', 'cpsp', 'frac', 'ss02';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
+}
+
+body > * {
+  padding: 0;
+}
+
+body > header,
+body > footer {
+  grid-column: 1 / 5;
+}
+
+body > main {
+  grid-column: 2 / 5;
+}
+
+@media (max-width: 768px) {
+
+  body > main {
+    grid-column: 1 / 5;
+  }
+}
+
+/* ==========================================================================
+   Main structural elements
+   ========================================================================== */
+
+/* Main header
+   ========================================================================== */
+
+body > header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: none;
+  padding: 2.5em 0;
+  font-family: var(--font-serif);
+  font-style: normal;
+}
+
+body > header div:first-child {
+  grid-column: 1;
+  place-self: center end;
+  line-height: 0;
+  padding: 0 2.5em;
+}
+
+body > header div:first-child svg {
+  max-height: 6.25em;
+  width: auto;
+  fill: currentColor;
+}
+
+body > header div:last-child {
+  grid-column: 2 / 5;
+  place-self: center start;
+  padding: 0 2.5em;
+}
+
+body > header div:last-child h1 {
+  line-height: 1em;
+  margin: 1rem 0;
+  font-size: 2.5em;
+  font-variation-settings: "opsz" 16;
+  font-weight: 800;
+}
+
+body > header div:last-child h1 + p {
+  line-height: 1em;
+  margin: .5rem 0;
+  text-align: right;
+  font-size: 1.25em;
+  font-variation-settings: "opsz" 48;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+
+  body > header div:first-child,
+  body > header div:last-child {
+    grid-column: 1 / 5;
+    place-self: center center;
+  }
+
+  body > header div:last-child h1,
+  body > header div:last-child h1 + p {
+    text-align: center;
+  }
+}
+
+/* Main dominant content
+   ========================================================================== */
+
+main {
+  padding: 2.5em;
+}
+
+main article header {
+  margin: 0 0 2.5em 0;
+}
+
+main article header h2,
+main article h3 {
+  font-family: var(--font-serif);
+  font-variation-settings: "opsz" 16;
+  font-weight: 600;
+}
+
+main article header h2 {
+  line-height: 1em;
+  margin: 0 0 1em 0;
+  font-size: 2.25em;
+}
+
+main article h3 {
+  line-height: 1em;
+  margin: 1em 0;
+  font-size: 1.5em;
+}
+
+main p {
+  line-height: 1.375;
+  text-align: left;
+  max-width: 80ch;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  margin: 0;
+}
+
+main p + p {
+  margin: 1.375rem 0 0 0
+}
+
+/* Main footer
+   ========================================================================== */
+
+body > footer {
+  padding: 2.5em 0;
+}
+
+body > footer > p {
+  line-height: 1.375;
+  text-align: right;
+  margin: 0 2.5em;
+  font-family: var(--font-serif);
+  font-variation-settings: "opsz" 18;
+  font-weight: 400;
+}
