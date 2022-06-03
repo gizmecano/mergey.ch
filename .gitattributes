@@ -1,2 +1,18 @@
+# Define version control attributes
+
 # Set default behavior for line endings
 * text eol=crlf
+
+# Source code files
+.*config  text
+.git*     text
+*.css     text
+*.json    text
+*.txt     text
+
+# Binary files
+*.woff2   binary
+
+# Vendored files in specific directories
+assets/inter/*      linguist-vendored
+assets/fraunces/*   linguist-vendored

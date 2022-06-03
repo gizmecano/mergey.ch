@@ -1,5 +1,14 @@
+# Define ignored and untracked files
+
 # Operating system
 [Dd]esktop.ini
 
 # Integrated development environment
 *.*-workspace
+
+# Binary files
+*.woff2
+
+# Prototyping process
+.stuff/
+proto-*.*
