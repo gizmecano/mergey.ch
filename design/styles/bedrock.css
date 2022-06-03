@@ -1,0 +1,36 @@
+/* ==========================================================================
+   Main grid layout
+   ========================================================================== */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+}
+
+body > * {
+  padding: 0;
+}
+
+body > header,
+body > footer {
+  grid-column: 1 / 5;
+}
+
+body > main {
+  grid-column: 2 / 5;
+}
+
+@media (max-width: 768px) {
+
+  body > main {
+    grid-column: 1 / 5;
+  }
+}
