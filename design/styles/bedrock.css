@@ -1,4 +1,14 @@
 /* ==========================================================================
+   Document roots
+   ========================================================================== */
+
+:root {
+  /* Embedded fonts with minimal stack */
+  --font-sans: 'Inter', sans-serif;
+}
+
+
+/* ==========================================================================
    Main grid layout
    ========================================================================== */
 
@@ -13,6 +23,11 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, auto);
+  font-family: var(--font-sans);
+  font-feature-settings: 'calt', 'cpsp', 'frac', 'ss02';
+  font-stretch: normal;
+  font-style: normal;
+  font-weight: 400;
 }
 
 body > * {
