@@ -130,3 +130,16 @@ main p {
 main p + p {
   margin: 1.375rem 0 0 0
 }
+
+/* Main footer
+   ========================================================================== */
+
+body > footer {
+  padding: 2.5em 0;
+}
+
+body > footer > p {
+  line-height: 1.375;
+  text-align: right;
+  margin: 0 2.5em;
+}
