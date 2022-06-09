@@ -7,8 +7,8 @@
   --font-sans: 'Inter', sans-serif;
   --font-serif: 'Fraunces', serif;
   /* Color palette using RGB values */
-  --tint-blue-dark: 31, 48, 94;
-  --tint-gold-pale: 251, 243, 211;
+  --blue-25: 31, 48, 94;
+  --tusk-91: 251, 243, 211;
 }
 
 /* ==========================================================================
@@ -22,8 +22,8 @@
 }
 
 body {
-  background-color: rgb(var(--tint-blue-dark));
-  color: rgb(var(--tint-gold-pale));
+  background-color: rgb(var(--blue-25));
+  color: rgb(var(--tusk-91));
   margin: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
