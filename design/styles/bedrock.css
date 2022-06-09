@@ -208,6 +208,15 @@ main p {
   margin: 0;
 }
 
+main p em,
+main p strong {
+  letter-spacing: .03125rem;
+}
+
+main p strong {
+  font-weight: 600;
+}
+
 main p + p {
   margin: 1.375rem 0 0 0
 }
