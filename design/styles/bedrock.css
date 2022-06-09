@@ -7,8 +7,10 @@
   --font-sans: 'Inter', sans-serif;
   --font-serif: 'Fraunces', serif;
   /* Color palette using RGB values */
+  --blue-18: 23, 35, 68;
   --blue-25: 31, 48, 94;
   --foxy-60: 254, 93, 54;
+  --gold-70: 254, 208, 105;
   --tusk-91: 251, 243, 211;
 }
 
@@ -166,6 +168,23 @@ main article h3 {
   line-height: 1em;
   margin: 1em 0;
   font-size: 1.5em;
+}
+
+main article aside {
+  padding: 1.5em;
+  border-radius: .5em;
+  max-width: 80ch;
+}
+
+main article article aside {
+  margin: 1.5em 0;
+  background-color: rgb(var(--blue-18));
+}
+
+main article header aside {
+  margin: 0 0 1.5em 0;
+  background-color: rgb(var(--gold-70));
+  color: rgb(var(--blue-18));
 }
 
 main p {
