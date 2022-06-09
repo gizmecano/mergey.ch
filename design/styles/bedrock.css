@@ -14,6 +14,10 @@
   --tusk-91: 251, 243, 211;
 }
 
+svg:not(:root) {
+  overflow: hidden;
+}
+
 /* ==========================================================================
    Main grid layout
    ========================================================================== */
@@ -174,6 +178,14 @@ main article aside {
   padding: 1.5em;
   border-radius: .5em;
   max-width: 80ch;
+}
+
+main article aside > p:first-of-type > svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: -.15em;
+  fill: currentColor;
+  margin-right: .25em;
 }
 
 main article article aside {
