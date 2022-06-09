@@ -8,6 +8,7 @@
   --font-serif: 'Fraunces', serif;
   /* Color palette using RGB values */
   --blue-25: 31, 48, 94;
+  --foxy-60: 254, 93, 54;
   --tusk-91: 251, 243, 211;
 }
 
@@ -53,6 +54,22 @@ body > main {
   body > main {
     grid-column: 1 / 5;
   }
+}
+
+/* Basic links
+   ========================================================================== */
+
+a,
+a:any-link {
+  color: inherit;
+  text-decoration: underline solid .125em currentColor;
+}
+
+a:hover,
+a:focus,
+a:active {
+  text-decoration-color: rgb(var(--foxy-60));
+  transition: text-decoration-color 800ms;
 }
 
 /* ==========================================================================
