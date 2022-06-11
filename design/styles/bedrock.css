@@ -228,11 +228,26 @@ body > footer {
   padding: 2.5em 0;
 }
 
-body > footer > p {
+body > footer ul {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0 2.5em;
+}
+
+body > footer ul:first-of-type {
+  margin: 1.25em 0;
+}
+
+body > footer ul li {
+  font-size: .875em;
+  font-weight: 300;
   line-height: 1.375;
-  text-align: right;
-  margin: 0 2.5em;
-  font-family: var(--font-serif);
-  font-variation-settings: "opsz" 18;
-  font-weight: 400;
+  margin: 0 1ch 0 0;
+}
+
+body > footer ul li:last-of-type {
+  margin: 0;
 }
