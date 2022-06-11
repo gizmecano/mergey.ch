@@ -251,3 +251,15 @@ body > footer ul li {
 body > footer ul li:last-of-type {
   margin: 0;
 }
+
+@media (max-width: 768px) {
+
+  body > footer ul {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  body > footer ul li {
+    margin: 0;
+  }
+}
