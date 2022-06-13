@@ -263,3 +263,75 @@ body > footer ul li:last-of-type {
     margin: 0;
   }
 }
+
+/* ==========================================================================
+   Pages specificities
+   ========================================================================== */
+
+/* Provisional index styles
+   ========================================================================== */
+
+.showcase {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: none;
+  padding: 0;
+  grid-gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.showcase article {
+  background-color: rgb(var(--blue-18));
+  border-radius: .5em;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.showcase article > figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.showcase article > figure img {
+  width: 100%;
+  height: 25vh;
+  object-fit: cover;
+  object-position: center top;
+  filter: grayscale(100%) opacity(72%)
+}
+
+.showcase article > figure img:hover {
+  filter: grayscale(0%) opacity(100%);
+  transition-duration: 800ms;
+}
+
+.showcase article > div {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.showcase article > div h4 {
+  font-size: 1.25em;
+  font-weight: 600;
+  line-height: 1em;
+  margin: 1.5rem 0;
+  letter-spacing: .03125rem;
+}
+
+.showcase article > div p {
+  font-size: .875em;
+  font-weight: 300;
+  line-height: 1.375;
+}
+
+@media (max-width: 768px) {
+
+  .showcase article {
+    grid-column: 1 / 4;
+  }
+}
