@@ -9,6 +9,10 @@
 # Binary files
 *.woff2
 
+# Inputting process
+record/
+
 # Prototyping process
+.issue/
 .stuff/
 proto-*.*
