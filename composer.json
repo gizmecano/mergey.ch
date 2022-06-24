@@ -1,0 +1,15 @@
+{
+  "name": "gizmecano/mergey.ch",
+  "type": "project",
+  "authors": [
+    {
+      "name": "P. Mergey",
+      "role": "Owner"
+    }
+  ],
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require": {
+    "php": "~7.4.20"
+  }
+}
