@@ -8,6 +8,7 @@
 .git*     text
 *.css     text
 *.json    text
+*.php     text
 *.txt     text
 
 # Binary files
