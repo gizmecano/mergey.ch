@@ -7,9 +7,12 @@
       "role": "Owner"
     }
   ],
+  "config": {
+    "platform": {
+      "php": "7.4.30"
+    }
+  },
   "minimum-stability": "stable",
   "prefer-stable": true,
-  "require": {
-    "php": "~7.4.20"
-  }
+  "require": {}
 }
