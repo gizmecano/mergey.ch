@@ -7,6 +7,7 @@ require_once 'layout/required/variables.php';
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $page['lang']; ?>">
+<?php require_once 'layout/anchored/head.php'; ?>
 
 <body id="<?php echo $page['body']; ?>">
 
