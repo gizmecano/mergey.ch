@@ -9,6 +9,7 @@
 *.css     text
 *.json    text
 *.php     text
+*.svg     text
 *.txt     text
 
 # Binary files
