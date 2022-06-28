@@ -13,6 +13,10 @@ if (empty($page['lang'])) {
   $page['lang'] = $site['lang'];
 }
 
+// Decode requiste languages glossary based on language
+
+$glossary = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/record/content/' . $page['lang'] . '/glossary.json'), true);
+
 // Prepare variables based on decoded data
 
 $site['name'] = ucfirst(substr($composer['name'], -9));

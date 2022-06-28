@@ -10,7 +10,9 @@
 *.woff2
 
 # Inputting process
-record/
+record/catalog/*
+record/content/*/*
+!record/content/*/glossary.json
 
 # Prototyping process
 .issue/
