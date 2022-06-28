@@ -31,4 +31,14 @@ switch ($page['body']) {
     $meta['title'] = $page['name'] . ' - ' . $site['name'];
 }
 
+// Define page description based on page type
+
+switch ($page['body']) {
+  case 'index':
+    $meta['blurb'] = $site['name'] . ' — ' . ucfirst($glossary['site']['motto']);
+    break;
+  default:
+    $meta['blurb'] = $site['name'];
+}
+
 // End of file ./layout/required/variables.php
