@@ -1,4 +1,8 @@
 <?php
+// Get current active host path
+
+$site['host'] = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/';
+
 // Decode dependency management setup
 
 $composer = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/composer.json'), true);
@@ -39,6 +43,16 @@ switch ($page['body']) {
     break;
   default:
     $meta['blurb'] = $site['name'];
+}
+
+// Define canonical link based on page type
+
+switch ($page['body']) {
+  case 'index':
+    $meta['canon'] = $site['host'];
+    break;
+  default:
+    $meta['canon'] = $site['host'];
 }
 
 // End of file ./layout/required/variables.php
