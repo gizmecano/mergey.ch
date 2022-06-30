@@ -1,4 +1,10 @@
 {
+  "body": {
+    "basis": {
+      "contact": "contact",
+      "imprint": "impressum"
+    }
+  },
   "site": {
     "motto": "design web, édition numérique, et cætera"
   }

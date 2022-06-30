@@ -19,7 +19,7 @@ require_once 'layout/required/variables.php';
       </article>
     </article>
   </main>
-
+  <?php require_once 'layout/anchored/footer.php'; ?>
 </body>
 
 </html>

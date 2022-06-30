@@ -24,6 +24,7 @@ $glossary = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/record/c
 // Prepare variables based on decoded data
 
 $site['name'] = ucfirst(substr($composer['name'], -9));
+$site['nick'] = substr($composer['name'], 0, 9);
 
 // Define page title based on page body
 
