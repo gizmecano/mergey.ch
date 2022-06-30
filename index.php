@@ -10,7 +10,7 @@ require_once 'layout/required/variables.php';
 <?php require_once 'layout/anchored/head.php'; ?>
 
 <body id="<?php echo $page['body']; ?>">
-
+  <?php require_once 'layout/anchored/header.php'; ?>
   <main>
     <article>
       <header>
