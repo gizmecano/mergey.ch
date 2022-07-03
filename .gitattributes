@@ -6,6 +6,7 @@
 # Source code files
 .*config  text
 .git*     text
+.ht*      text
 *.css     text
 *.json    text
 *.php     text

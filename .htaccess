@@ -1,0 +1,14 @@
+# ----------------------------------------------------------------------
+# Rewrite Module
+# ----------------------------------------------------------------------
+
+<IfModule mod_rewrite.c>
+  Options +FollowSymlinks -Multiviews
+  RewriteEngine On
+  RewriteBase /
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+# Rewriting rules for version 5
+  # Index page
+    RewriteRule ^index\.(htm|html|php) / [R=301,QSA,L]
+</IfModule>
