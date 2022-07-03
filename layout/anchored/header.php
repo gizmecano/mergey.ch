@@ -1,6 +1,8 @@
 <header>
   <div>
-    <?php echo file_get_contents('design/badges/emblem.svg'); ?>
+    <a href="/">
+      <?php echo file_get_contents('design/badges/emblem.svg'); ?>
+    </a>
   </div>
   <div>
     <h1><?php echo $site['name']; ?></h1>
