@@ -1,7 +1,7 @@
 <header>
   <div>
     <a href="/">
-      <?php echo file_get_contents('design/badges/emblem.svg'); ?>
+      <?php echo file_get_contents('design/badges/emblem-stamp.svg'); ?>
     </a>
   </div>
   <div>

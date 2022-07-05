@@ -17,5 +17,4 @@ record/content/*/*
 # Prototyping process
 .issue/
 .stuff/
-design/badges
 proto-*.*
