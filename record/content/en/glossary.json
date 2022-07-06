@@ -5,6 +5,20 @@
       "imprint": "imprint"
     }
   },
+  "code": {
+    "ch-vs": "Wallis",
+    "ch": "Switzerland",
+    "fr-59": "Nord",
+    "fr": "France",
+    "us-ca": "California",
+    "us": "United States of America"
+  },
+  "mast": {
+    "c": "contact informations",
+    "o": "owner and publisher",
+    "h": "web hosting service",
+    "s": "source code"
+  },
   "site": {
     "motto": "web design, digital publishing, et cætera"
   }
