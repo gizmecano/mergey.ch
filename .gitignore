@@ -11,9 +11,8 @@
 
 # Inputting process
 record/catalog/*
-record/content/*
-record/content/*/*
-!record/content/*/glossary.json
+record/content/*.json
+record/content/*/*.md
 
 # Prototyping process
 .issue/
