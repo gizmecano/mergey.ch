@@ -30,6 +30,9 @@ if (isset($page['case'])) {
 
 // Define page title based on page body
 switch ($page['body']) {
+  case 'basis':
+    $meta['title'] = $site['name'] . ' — ' . $page['name'];
+    break;
   case 'index':
     $meta['title'] = $site['name'];
     break;
@@ -39,6 +42,9 @@ switch ($page['body']) {
 
 // Define page description based on page body
 switch ($page['body']) {
+  case 'basis':
+    $meta['blurb'] = $page['name'];
+    break;
   case 'index':
     $meta['blurb'] = $site['name'] . ' — ' . ucfirst($glossary['site']['motto']);
     break;
@@ -48,6 +54,9 @@ switch ($page['body']) {
 
 // Define canonical link based on page body
 switch ($page['body']) {
+  case 'basis':
+    $meta['canon'] = $site['host'] . $page['case'];
+    break;
   case 'index':
     $meta['canon'] = $site['host'];
     break;
