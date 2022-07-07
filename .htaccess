@@ -11,4 +11,6 @@
 # Rewriting rules for version 5
   # Index page
     RewriteRule ^index\.(htm|html|php) / [R=301,QSA,L]
+  # Basis page
+    RewriteRule ^([a-zA-Z0-9\-]+)$ /basis.php?case=$1 [QSA,L]
 </IfModule>
