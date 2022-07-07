@@ -23,6 +23,11 @@ if (empty($page['lang'])) {
 // Decode requisite glossary based on language variable
 $glossary = json_decode(file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/record/content/' . $page['lang'] . '/glossary.json'), true);
 
+// Prepare page name based on page case
+if (isset($page['case'])) {
+  $page['name'] = ucfirst($glossary['body'][$page['body']][$page['case']]);
+}
+
 // Define page title based on page body
 switch ($page['body']) {
   case 'index':
