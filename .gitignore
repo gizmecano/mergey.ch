@@ -9,6 +9,9 @@
 # Binary files
 *.woff2
 
+# Dependencies folders
+vendor/
+
 # Inputting process
 record/catalog/*
 record/content/*.json

@@ -16,6 +16,9 @@
 # Binary files
 *.woff2   binary
 
+# Generated files
+composer.lock       linguist-generated
+
 # Vendored files in specific directories
 assets/inter/*      linguist-vendored
 assets/fraunces/*   linguist-vendored
