@@ -34,6 +34,7 @@ $page['path'] = $_SERVER['DOCUMENT_ROOT'] . '/record/content/' . $page['lang'] .
 // Define page title based on page body
 switch ($page['body']) {
   case 'basis':
+  case 'error':
     $meta['title'] = $site['name'] . ' — ' . $page['name'];
     break;
   case 'index':
@@ -46,6 +47,7 @@ switch ($page['body']) {
 // Define page description based on page body
 switch ($page['body']) {
   case 'basis':
+  case 'error':
     $meta['blurb'] = $page['name'];
     break;
   case 'index':
@@ -59,6 +61,9 @@ switch ($page['body']) {
 switch ($page['body']) {
   case 'basis':
     $meta['canon'] = $site['host'] . $page['case'];
+    break;
+  case 'error':
+    $meta['canon'] = $site['host'] . $page['body'] . '-' . $page['case'];
     break;
   case 'index':
     $meta['canon'] = $site['host'];

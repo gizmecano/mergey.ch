@@ -11,6 +11,15 @@
 # Rewriting rules for version 5
   # Index page
     RewriteRule ^index\.(htm|html|php) / [R=301,QSA,L]
+  # Error page
+    RewriteRule ^error-([a-zA-Z0-9\-]+)$ /error.php?case=$1 [QSA,L]
   # Basis page
     RewriteRule ^([a-zA-Z0-9\-]+)$ /basis.php?case=$1 [QSA,L]
 </IfModule>
+
+# ----------------------------------------------------------------------
+# Error Document
+# ----------------------------------------------------------------------
+
+ErrorDocument 302 /error-302
+ErrorDocument 404 /error-404
