@@ -6,9 +6,6 @@ $page['case'] = $_GET['case'];
 // Include requisite functions and variables
 require_once 'layout/required/functions.php';
 require_once 'layout/required/variables.php';
-
-// Declare computed variables for this page
-$page['path'] = $_SERVER['DOCUMENT_ROOT'] . '/record/content/' . $page['lang'] . '/';
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $page['lang']; ?>">

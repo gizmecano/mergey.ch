@@ -28,6 +28,9 @@ if (isset($page['case'])) {
   $page['name'] = ucfirst($glossary['body'][$page['body']][$page['case']]);
 }
 
+// Define content page path based on page language
+$page['path'] = $_SERVER['DOCUMENT_ROOT'] . '/record/content/' . $page['lang'] . '/';
+
 // Define page title based on page body
 switch ($page['body']) {
   case 'basis':
