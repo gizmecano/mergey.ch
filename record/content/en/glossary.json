@@ -6,6 +6,10 @@
     "basis": {
       "contact": "contact",
       "imprint": "imprint"
+    },
+    "error": {
+      "302": "page not available",
+      "404": "page not found"
     }
   },
   "code": {
