@@ -18,6 +18,9 @@
     "default": true,
     "line-length": false
   },
+  "markdownlint.ignore": [
+    "**/LICENSE.md"
+    ],
   "[markdown]": {
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 80,
