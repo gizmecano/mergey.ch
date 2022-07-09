@@ -9,7 +9,6 @@ require_once 'layout/required/variables.php';
 ?>
 <!DOCTYPE html>
 <html lang="<?php echo $page['lang']; ?>">
-
 <?php require_once 'layout/anchored/head.php'; ?>
 
 <body id="<?php echo $page['body']; ?>">
@@ -17,6 +16,9 @@ require_once 'layout/required/variables.php';
   <main>
     <article>
       <header>
+        <?php
+        include_once 'layout/embedded/aside-redesign.php';
+        ?>
         <h2><?php echo $page['name']; ?></h2>
         <?php
         $text['path'] = $page['path'] . '/' . $page['case'] . '.md';
@@ -29,7 +31,6 @@ require_once 'layout/required/variables.php';
         ?>
       </article>
     </article>
-
   </main>
   <?php require_once 'layout/anchored/footer.php'; ?>
 </body>
