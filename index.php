@@ -2,7 +2,8 @@
 // Declare variables specific to this page
 $page['body'] = basename($_SERVER['PHP_SELF'], ".php");
 
-// Include required variables
+// Include requisite functions and variables
+require_once 'layout/required/functions.php';
 require_once 'layout/required/variables.php';
 ?>
 <!DOCTYPE html>
@@ -14,6 +15,9 @@ require_once 'layout/required/variables.php';
   <main>
     <article>
       <header>
+        <?php
+        include_once 'layout/embedded/aside-redesign.php';
+        ?>
       </header>
       <article>
       </article>
