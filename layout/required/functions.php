@@ -7,18 +7,9 @@ use Michelf\MarkdownExtra;
 use Michelf\SmartyPantsTypographer;
 use Spatie\YamlFrontMatter\YamlFrontMatter;
 
-// Textual content processing
-// Parse and format body text set in a targeted file
-
-function q_parse_txt($path, $lang)
+// Apply typographic rules according to specified language
+function pmf_typo_text($text, $lang)
 {
-  // Parse targeted file content
-  $file = YamlFrontMatter::parse(file_get_contents($path));
-  // Return body text to be formatted
-  $body = MarkdownExtra::defaultTransform($file->body());
-  // Define typographic rules based on page language
-  // Configuration options based on:
-  // https://michelf.ca/projects/php-smartypants/configuration/
   switch ($lang) {
     case 'en':
       $rule = "qDe";
@@ -27,10 +18,19 @@ function q_parse_txt($path, $lang)
       $rule = "qDe:+;+m+f+";
       break;
   }
-  // Format text based on defined rules
-  $text = SmartyPantsTypographer::defaultTransform($body, $rule);
+  $html = SmartyPantsTypographer::defaultTransform($text, $rule);
+  return $html;
+  unset($text, $lang, $rule, $html);
+}
+
+// Parse and format body text based on specified path and language
+function pmf_body_text($path, $lang)
+{
+  $file = YamlFrontMatter::parse(file_get_contents($path));
+  $body = MarkdownExtra::defaultTransform($file->body());
+  $text = pmf_typo_text($body, $lang);
   return $text;
-  unset($path, $lang, $file, $body, $rule, $text);
+  unset($path, $lang, $file, $body, $text);
 }
 
 // End of file ./layout/required/functions.php

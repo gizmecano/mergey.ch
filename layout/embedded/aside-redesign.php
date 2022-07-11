@@ -5,7 +5,7 @@
   </p>
   <?php
   $text['path'] = $page['path'] . 'redesign.md';
-  echo q_parse_txt($text['path'], $page['lang']);
+  echo pmf_body_text($text['path'], $page['lang']);
   ?>
 </aside>
 

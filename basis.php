@@ -22,7 +22,7 @@ require_once 'layout/required/variables.php';
         <h2><?php echo $page['name']; ?></h2>
         <?php
         $text['path'] = $page['path'] . '/' . $page['case'] . '.md';
-        echo q_parse_txt($text['path'], $page['lang']);
+        echo pmf_body_text($text['path'], $page['lang']);
         ?>
       </header>
       <article>
