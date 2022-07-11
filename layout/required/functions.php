@@ -7,6 +7,14 @@ use Michelf\MarkdownExtra;
 use Michelf\SmartyPantsTypographer;
 use Spatie\YamlFrontMatter\YamlFrontMatter;
 
+// Recover the most recent image in a specified folder
+function pmf_last_pict($path)
+{
+  $list = array_reverse(glob($path . '*.{jpg,png}', GLOB_BRACE));
+  return $list[0];
+  unset($path, $list);
+}
+
 // Apply typographic rules according to specified language
 function pmf_typo_text($text, $lang)
 {
