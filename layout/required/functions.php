@@ -15,6 +15,15 @@ function pmf_last_pict($path)
   unset($path, $list);
 }
 
+// Parse front matter data set in a specified file
+function pmf_yaml_data($path)
+{
+  $file = YamlFrontMatter::parse(file_get_contents($path));
+  $data = $file->matter();
+  return $data;
+  unset($path, $file, $data);
+}
+
 // Apply typographic rules according to specified language
 function pmf_typo_text($text, $lang)
 {
