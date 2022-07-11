@@ -50,4 +50,12 @@ function pmf_body_text($path, $lang)
   unset($path, $lang, $file, $body, $text);
 }
 
+// Split up first paragraph from body text
+function pmf_part_text($text)
+{
+  $part[1] = substr($text, 0, stripos($text, "</p>") + 4);
+  $part[2] = preg_replace("/(\r\n|\n|\r)/", "", substr($text, stripos($text, "</p>") + 4));
+  return $part;
+}
+
 // End of file ./layout/required/functions.php
