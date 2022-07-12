@@ -16,9 +16,7 @@ require_once 'layout/required/variables.php';
   <main>
     <article>
       <header>
-        <?php
-        include_once 'layout/embedded/aside-redesign.php';
-        ?>
+        <?php include_once 'layout/embedded/aside-redesign.php'; ?>
         <h2><?php echo $page['name']; ?></h2>
         <?php
         $hasp = $page['path'] . '/' . $page['case'] . '.md';
@@ -27,9 +25,7 @@ require_once 'layout/required/variables.php';
         ?>
       </header>
       <article>
-        <?php
-        require_once 'layout/targeted/basis-article-' . $page['case'] . '.php';
-        ?>
+        <?php require_once 'layout/targeted/basis-article-' . $page['case'] . '.php'; ?>
       </article>
     </article>
   </main>

@@ -16,9 +16,7 @@ require_once 'layout/required/variables.php';
   <main>
     <article>
       <header>
-        <?php
-        include_once 'layout/embedded/aside-redesign.php';
-        ?>
+        <?php include_once 'layout/embedded/aside-redesign.php'; ?>
         <h2><?php echo $page['name']; ?></h2>
       </header>
       <?php

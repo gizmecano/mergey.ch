@@ -15,9 +15,7 @@ require_once 'layout/required/variables.php';
   <main>
     <article>
       <header>
-        <?php
-        include_once 'layout/embedded/aside-redesign.php';
-        ?>
+        <?php include_once 'layout/embedded/aside-redesign.php'; ?>
         <h2><?php echo ucfirst($glossary['body']['index']['foreword']); ?></h2>
         <?php
         $hasp = $page['path'] . $page['body'] . '.md';
@@ -26,9 +24,7 @@ require_once 'layout/required/variables.php';
         ?>
       </header>
       <article>
-        <?php
-        include_once 'layout/targeted/index-showcase.php';
-        ?>
+        <?php include_once 'layout/targeted/index-showcase.php'; ?>
       </article>
     </article>
   </main>
