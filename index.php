@@ -20,6 +20,9 @@ require_once 'layout/required/variables.php';
         ?>
       </header>
       <article>
+        <?php
+        include_once 'layout/targeted/index-showcase.php';
+        ?>
       </article>
     </article>
   </main>
