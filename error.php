@@ -22,8 +22,9 @@ require_once 'layout/required/variables.php';
         <h2><?php echo $page['name']; ?></h2>
       </header>
       <?php
-        $text['path'] = $page['path'] . '/' . $page['body'] . '-' . $page['case'] . '.md';
-        echo pmf_body_text($text['path'], $page['lang']);
+        $hasp = $page['path'] . '/' . $page['body'] . '-' . $page['case'] . '.md';
+        echo pmf_body_text($hasp, $page['lang']);
+        unset($hasp);
         ?>
     </article>
   </main>

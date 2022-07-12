@@ -4,8 +4,9 @@
     <strong><?php echo $glossary['body']['aside']['redesign']; ?></strong>
   </p>
   <?php
-  $text['path'] = $page['path'] . 'redesign.md';
-  echo pmf_body_text($text['path'], $page['lang']);
+  $hasp = $page['path'] . 'redesign.md';
+  echo pmf_body_text($hasp, $page['lang']);
+  unset($hasp);
   ?>
 </aside>
 
