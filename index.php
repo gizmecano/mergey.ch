@@ -18,6 +18,11 @@ require_once 'layout/required/variables.php';
         <?php
         include_once 'layout/embedded/aside-redesign.php';
         ?>
+        <h2><?php echo ucfirst($glossary['body']['index']['foreword']); ?></h2>
+        <?php
+        $text['path'] = $page['path'] . $page['body'] . '.md';
+        echo pmf_body_text($text['path'], $page['lang']);
+        ?>
       </header>
       <article>
         <?php
