@@ -16,6 +16,10 @@
 # Binary files
 *.woff2   binary
 
+# Documentation files
+*.md    linguist-documentation
+*.txt   linguist-documentation
+
 # Generated files
 composer.lock       linguist-generated
 
