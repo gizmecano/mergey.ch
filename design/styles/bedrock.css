@@ -107,6 +107,15 @@ body > header div:first-child svg {
   fill: currentColor;
 }
 
+body > header div:first-child a svg:hover,
+body > header div:first-child a svg:focus,
+body > header div:first-child a svg:active {
+  fill: rgb(var(--foxy-60));
+  transform: rotate(360deg);
+  transition-timing-function: ease-in-out;
+  transition-duration: 1600ms;
+}
+
 body > header div:last-child {
   grid-column: 2 / 5;
   place-self: center start;
@@ -194,7 +203,7 @@ main article article aside {
 }
 
 main article header aside {
-  margin: 0 0 1.5em 0;
+  margin: 0 0 2.25em 0;
   background-color: rgb(var(--gold-70));
   color: rgb(var(--blue-18));
 }

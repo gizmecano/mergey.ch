@@ -1,0 +1,36 @@
+{
+  "body": {
+    "aside": {
+      "redesign": "Redesign in progress"
+    },
+    "basis": {
+      "contact": "contact",
+      "imprint": "imprint"
+    },
+    "error": {
+      "302": "page not available",
+      "404": "page not found"
+    },
+    "index": {
+      "foreword": "greetings",
+      "showcase": "some recent works"
+    }
+  },
+  "code": {
+    "ch-vs": "Wallis",
+    "ch": "Switzerland",
+    "fr-59": "Nord",
+    "fr": "France",
+    "us-ca": "California",
+    "us": "United States of America"
+  },
+  "mast": {
+    "c": "contact informations",
+    "o": "owner and publisher",
+    "h": "web hosting service",
+    "s": "source code"
+  },
+  "site": {
+    "motto": "web design, digital publishing, et cætera"
+  }
+}

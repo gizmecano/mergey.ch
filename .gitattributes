@@ -6,13 +6,24 @@
 # Source code files
 .*config  text
 .git*     text
+.ht*      text
 *.css     text
 *.json    text
+*.php     text
+*.svg     text
 *.txt     text
 
 # Binary files
 *.woff2   binary
 
+# Documentation files
+*.md    linguist-documentation
+*.txt   linguist-documentation
+
+# Generated files
+composer.lock       linguist-generated
+
 # Vendored files in specific directories
+assets/bi/*         linguist-vendored
 assets/inter/*      linguist-vendored
 assets/fraunces/*   linguist-vendored

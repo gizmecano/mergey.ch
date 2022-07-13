@@ -1,0 +1,36 @@
+{
+  "body": {
+    "aside": {
+      "redesign": "Refonte en cours"
+    },
+    "basis": {
+      "contact": "contact",
+      "imprint": "impressum"
+    },
+    "error": {
+      "302": "page indisponible",
+      "404": "page introuvable"
+    },
+    "index": {
+      "foreword": "saluations",
+      "showcase": "quelques travaux récents"
+    }
+  },
+  "code": {
+    "ch-vs": "Valais",
+    "ch": "Suisse",
+    "fr-59": "Nord",
+    "fr": "France",
+    "us-ca": "Californie",
+    "us": "États-Unis d’Amérique"
+  },
+  "mast": {
+    "c": "coordonnées",
+    "o": "propriétaire et éditeur",
+    "h": "hébergeur web",
+    "s": "code source"
+  },
+  "site": {
+    "motto": "design web, édition numérique, et cætera"
+  }
+}

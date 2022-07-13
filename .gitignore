@@ -9,8 +9,13 @@
 # Binary files
 *.woff2
 
+# Dependencies folders
+vendor/
+
 # Inputting process
-record/
+record/catalog/*
+record/content/*.json
+record/content/*/*.md
 
 # Prototyping process
 .issue/

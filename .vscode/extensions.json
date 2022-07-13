@@ -1,6 +1,8 @@
 {
     "recommendations": [
-        "davidanson.vscode-markdownlint",
-        "EditorConfig.EditorConfig"
+      "bmewburn.vscode-intelephense-client",
+      "davidanson.vscode-markdownlint",
+      "editorconfig.editorconfig",
+      "ikappas.composer"
     ]
 }

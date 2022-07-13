@@ -15,4 +15,5 @@
 
 ## Snippets
 
+- [CSS Grid Card Layout](https://codepen.io/mxbck/pen/XRBNgj) by [Max Böck](https://twitter.com/mxbck)
 - [Simple fade underline animation](https://codepen.io/michellebarker/pen/VwPvPMp) by [Michelle Barker](https://twitter.com/MicheBarks)
