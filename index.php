@@ -30,5 +30,6 @@ require_once 'layout/required/variables.php';
   </main>
   <?php require_once 'layout/anchored/footer.php'; ?>
 </body>
+<?php unset($page); ?>
 
 </html>

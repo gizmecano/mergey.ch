@@ -1,4 +1,4 @@
-<h3><?php echo ucfirst($glossary['body']['index']['showcase']) ;?></h3>
+<h3><?php echo ucfirst($glossary['body']['index']['showcase']); ?></h3>
 <div class="showcase">
   <?php
   // Define showcase content in index layout
@@ -31,5 +31,6 @@
     }
     $line++;
   }
+  unset($file, $data, $line, $item, $path, $main, $head, $href);
   ?>
 </div>
