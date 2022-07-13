@@ -24,5 +24,6 @@
 composer.lock       linguist-generated
 
 # Vendored files in specific directories
+assets/bi/*         linguist-vendored
 assets/inter/*      linguist-vendored
 assets/fraunces/*   linguist-vendored
