@@ -14,7 +14,8 @@
   # Error page
     RewriteRule ^error-([a-zA-Z0-9\-]+)$ /error.php?case=$1 [QSA,L]
   # Basis page
-    RewriteRule ^([a-zA-Z0-9\-]+)$ /basis.php?case=$1 [QSA,L]
+    RewriteRule ^contact$ /basis.php?case=contact [QSA,L]
+    RewriteRule ^imprint$ /basis.php?case=imprint [QSA,L]
 </IfModule>
 
 # ----------------------------------------------------------------------
