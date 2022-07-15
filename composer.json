@@ -1,0 +1,22 @@
+{
+  "name": "gizmecano/mergey.ch",
+  "type": "project",
+  "authors": [
+    {
+      "name": "P. Mergey",
+      "role": "Owner"
+    }
+  ],
+  "config": {
+    "platform": {
+      "php": "7.4.30"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require": {
+    "michelf/php-markdown": "^1.9",
+    "michelf/php-smartypants": "^1.8",
+    "spatie/yaml-front-matter": "^2.0"
+  }
+}

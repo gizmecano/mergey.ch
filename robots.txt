@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /.*config
+Disallow: /.htaccess
+Disallow: /*.json
+Disallow: /*.lock
+Disallow: /robots.txt
+Disallow: /vendor/
