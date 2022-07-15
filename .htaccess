@@ -8,6 +8,13 @@
   RewriteBase /
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
+# Rewriting rules for version 3
+  # Pages permanently moved
+    RewriteRule ^about=contact$ /contact [R=301]
+    RewriteRule ^about=impressum$ /imprint [R=301]
+  # Pages temporarily unavailable
+    RewriteRule ^information=introduction$ /error-302 [R=302,L]
+    RewriteRule ^information=services$ /error-302 [R=302,L]
 # Rewriting rules for version 4
   # Pages temporarily unavailable
     RewriteRule ^activities$ /error-302 [R=302,L]
