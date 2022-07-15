@@ -8,6 +8,11 @@
   RewriteBase /
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
+# Rewriting rules for version 4
+  # Pages temporarily unavailable
+    RewriteRule ^activities$ /error-302 [R=302,L]
+    RewriteRule ^capacities$ /error-302 [R=302,L]
+    RewriteRule ^principles$ /error-302 [R=302,L]
 # Rewriting rules for version 5
   # Index page
     RewriteRule ^index\.(htm|html|php) / [R=301,QSA,L]
