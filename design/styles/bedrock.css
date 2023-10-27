@@ -96,15 +96,16 @@ body > header {
 
 body > header div:first-child {
   grid-column: 1;
-  place-self: center end;
   line-height: 0;
   padding: 0 2.5em;
 }
 
 body > header div:first-child svg {
+  display: block;
+  fill: currentColor;
+  margin: auto;
   max-height: 6.25em;
   width: auto;
-  fill: currentColor;
 }
 
 body > header div:first-child a svg:hover,
