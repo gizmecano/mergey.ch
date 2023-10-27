@@ -9,8 +9,10 @@
 # Binary files
 *.woff2
 
-# Dependencies folders
-vendor/
+# Dependencies folder (except license files)
+/vendor/**
+!/vendor/**/
+![Ll]icense*
 
 # Inputting process
 record/catalog/*
