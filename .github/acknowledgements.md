@@ -16,4 +16,5 @@
 ## Snippets
 
 - [CSS Grid Card Layout](https://codepen.io/mxbck/pen/XRBNgj) by [Max Böck](https://twitter.com/mxbck)
+- [CSS Grid: Header, Footer with 2-Column (Responsive)](https://codepen.io/geoffgraham/pen/jaqWMJ) by [Geoff Graham](https://twitter.com/geoffreygraham)
 - [Simple fade underline animation](https://codepen.io/michellebarker/pen/VwPvPMp) by [Michelle Barker](https://twitter.com/MicheBarks)

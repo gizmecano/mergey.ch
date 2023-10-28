@@ -9,15 +9,12 @@
 # Binary files
 *.woff2
 
-# Dependencies folders
-vendor/
+# Dependencies folder (except license files)
+/vendor/**
+!/vendor/**/
+![Ll]icense*
 
 # Inputting process
 record/catalog/*
 record/content/*.json
 record/content/*/*.md
-
-# Prototyping process
-.issue/
-.stuff/
-proto-*.*
