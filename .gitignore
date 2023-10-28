@@ -18,8 +18,3 @@
 record/catalog/*
 record/content/*.json
 record/content/*/*.md
-
-# Prototyping process
-.issue/
-.stuff/
-proto-*.*
