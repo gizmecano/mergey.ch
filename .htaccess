@@ -76,7 +76,7 @@
     RewriteRule ^epub=wastburg$ /error-302 [R=302,L]
     RewriteRule ^epub=zombies$ /error-302 [R=302,L]
     RewriteRule ^logo=gizmecano$ /error-302 [R=302,L]
-    RewriteRule ^logo=gizmecano$ /error-302 [R=302,L] /error-302 [R=302,L]
+    RewriteRule ^logo=gizmecano$ /error-302 [R=302,L]
     RewriteRule ^logo=igloojunior$ /error-302 [R=302,L]
     RewriteRule ^logo=mergey$ /error-302 [R=302,L]
     RewriteRule ^services$ /error-302 [R=302,L]
