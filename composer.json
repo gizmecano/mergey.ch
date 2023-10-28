@@ -1,9 +1,13 @@
 {
   "name": "gizmecano/mergey.ch",
+  "version": "5.0.0-beta.3",
   "type": "project",
+  "description": "Source code of a handmade portfolio",
+  "homepage": "https://github.com/gizmecano/mergey.ch",
   "authors": [
     {
       "name": "P. Mergey",
+      "homepage": "https://mergey.ch/",
       "role": "Owner"
     }
   ],
